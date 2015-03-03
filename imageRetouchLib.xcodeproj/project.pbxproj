@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CDC449DE1AA5B15400F2AE40 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC449DD1AA5B15400F2AE40 /* main.m */; };
+		CDC449E11AA5B15400F2AE40 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC449E01AA5B15400F2AE40 /* AppDelegate.m */; };
+		CDC449E41AA5B15400F2AE40 /* imageRetouchLib.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CDC449E21AA5B15400F2AE40 /* imageRetouchLib.xcdatamodeld */; };
+		CDC449E71AA5B15400F2AE40 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC449E61AA5B15400F2AE40 /* ViewController.m */; };
+		CDC449EA1AA5B15400F2AE40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDC449E81AA5B15400F2AE40 /* Main.storyboard */; };
+		CDC449EC1AA5B15400F2AE40 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDC449EB1AA5B15400F2AE40 /* Images.xcassets */; };
+		CDC449EF1AA5B15400F2AE40 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDC449ED1AA5B15400F2AE40 /* LaunchScreen.xib */; };
+		CDC449FB1AA5B15400F2AE40 /* imageRetouchLibTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC449FA1AA5B15400F2AE40 /* imageRetouchLibTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CDC449F51AA5B15400F2AE40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDC449D01AA5B15400F2AE40 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDC449D71AA5B15400F2AE40;
+			remoteInfo = imageRetouchLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CDC449D81AA5B15400F2AE40 /* imageRetouchLib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = imageRetouchLib.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDC449DC1AA5B15400F2AE40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDC449DD1AA5B15400F2AE40 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CDC449DF1AA5B15400F2AE40 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CDC449E01AA5B15400F2AE40 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CDC449E31AA5B15400F2AE40 /* imageRetouchLib.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = imageRetouchLib.xcdatamodel; sourceTree = "<group>"; };
+		CDC449E51AA5B15400F2AE40 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CDC449E61AA5B15400F2AE40 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CDC449E91AA5B15400F2AE40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CDC449EB1AA5B15400F2AE40 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CDC449EE1AA5B15400F2AE40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		CDC449F41AA5B15400F2AE40 /* imageRetouchLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = imageRetouchLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDC449F91AA5B15400F2AE40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDC449FA1AA5B15400F2AE40 /* imageRetouchLibTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = imageRetouchLibTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CDC449D51AA5B15400F2AE40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDC449F11AA5B15400F2AE40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CDC449CF1AA5B15400F2AE40 = {
+			isa = PBXGroup;
+			children = (
+				CDC449DA1AA5B15400F2AE40 /* imageRetouchLib */,
+				CDC449F71AA5B15400F2AE40 /* imageRetouchLibTests */,
+				CDC449D91AA5B15400F2AE40 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CDC449D91AA5B15400F2AE40 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDC449D81AA5B15400F2AE40 /* imageRetouchLib.app */,
+				CDC449F41AA5B15400F2AE40 /* imageRetouchLibTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CDC449DA1AA5B15400F2AE40 /* imageRetouchLib */ = {
+			isa = PBXGroup;
+			children = (
+				CDC449DF1AA5B15400F2AE40 /* AppDelegate.h */,
+				CDC449E01AA5B15400F2AE40 /* AppDelegate.m */,
+				CDC449E51AA5B15400F2AE40 /* ViewController.h */,
+				CDC449E61AA5B15400F2AE40 /* ViewController.m */,
+				CDC449E81AA5B15400F2AE40 /* Main.storyboard */,
+				CDC449EB1AA5B15400F2AE40 /* Images.xcassets */,
+				CDC449ED1AA5B15400F2AE40 /* LaunchScreen.xib */,
+				CDC449E21AA5B15400F2AE40 /* imageRetouchLib.xcdatamodeld */,
+				CDC449DB1AA5B15400F2AE40 /* Supporting Files */,
+			);
+			path = imageRetouchLib;
+			sourceTree = "<group>";
+		};
+		CDC449DB1AA5B15400F2AE40 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CDC449DC1AA5B15400F2AE40 /* Info.plist */,
+				CDC449DD1AA5B15400F2AE40 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CDC449F71AA5B15400F2AE40 /* imageRetouchLibTests */ = {
+			isa = PBXGroup;
+			children = (
+				CDC449FA1AA5B15400F2AE40 /* imageRetouchLibTests.m */,
+				CDC449F81AA5B15400F2AE40 /* Supporting Files */,
+			);
+			path = imageRetouchLibTests;
+			sourceTree = "<group>";
+		};
+		CDC449F81AA5B15400F2AE40 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CDC449F91AA5B15400F2AE40 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CDC449D71AA5B15400F2AE40 /* imageRetouchLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDC449FE1AA5B15400F2AE40 /* Build configuration list for PBXNativeTarget "imageRetouchLib" */;
+			buildPhases = (
+				CDC449D41AA5B15400F2AE40 /* Sources */,
+				CDC449D51AA5B15400F2AE40 /* Frameworks */,
+				CDC449D61AA5B15400F2AE40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = imageRetouchLib;
+			productName = imageRetouchLib;
+			productReference = CDC449D81AA5B15400F2AE40 /* imageRetouchLib.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CDC449F31AA5B15400F2AE40 /* imageRetouchLibTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDC44A011AA5B15400F2AE40 /* Build configuration list for PBXNativeTarget "imageRetouchLibTests" */;
+			buildPhases = (
+				CDC449F01AA5B15400F2AE40 /* Sources */,
+				CDC449F11AA5B15400F2AE40 /* Frameworks */,
+				CDC449F21AA5B15400F2AE40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDC449F61AA5B15400F2AE40 /* PBXTargetDependency */,
+			);
+			name = imageRetouchLibTests;
+			productName = imageRetouchLibTests;
+			productReference = CDC449F41AA5B15400F2AE40 /* imageRetouchLibTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CDC449D01AA5B15400F2AE40 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = OSS;
+				TargetAttributes = {
+					CDC449D71AA5B15400F2AE40 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					CDC449F31AA5B15400F2AE40 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = CDC449D71AA5B15400F2AE40;
+					};
+				};
+			};
+			buildConfigurationList = CDC449D31AA5B15400F2AE40 /* Build configuration list for PBXProject "imageRetouchLib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CDC449CF1AA5B15400F2AE40;
+			productRefGroup = CDC449D91AA5B15400F2AE40 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CDC449D71AA5B15400F2AE40 /* imageRetouchLib */,
+				CDC449F31AA5B15400F2AE40 /* imageRetouchLibTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CDC449D61AA5B15400F2AE40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDC449EA1AA5B15400F2AE40 /* Main.storyboard in Resources */,
+				CDC449EF1AA5B15400F2AE40 /* LaunchScreen.xib in Resources */,
+				CDC449EC1AA5B15400F2AE40 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDC449F21AA5B15400F2AE40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CDC449D41AA5B15400F2AE40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDC449E11AA5B15400F2AE40 /* AppDelegate.m in Sources */,
+				CDC449DE1AA5B15400F2AE40 /* main.m in Sources */,
+				CDC449E71AA5B15400F2AE40 /* ViewController.m in Sources */,
+				CDC449E41AA5B15400F2AE40 /* imageRetouchLib.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDC449F01AA5B15400F2AE40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDC449FB1AA5B15400F2AE40 /* imageRetouchLibTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CDC449F61AA5B15400F2AE40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDC449D71AA5B15400F2AE40 /* imageRetouchLib */;
+			targetProxy = CDC449F51AA5B15400F2AE40 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CDC449E81AA5B15400F2AE40 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDC449E91AA5B15400F2AE40 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CDC449ED1AA5B15400F2AE40 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDC449EE1AA5B15400F2AE40 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CDC449FC1AA5B15400F2AE40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CDC449FD1AA5B15400F2AE40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CDC449FF1AA5B15400F2AE40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = imageRetouchLib/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CDC44A001AA5B15400F2AE40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = imageRetouchLib/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CDC44A021AA5B15400F2AE40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = imageRetouchLibTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/imageRetouchLib.app/imageRetouchLib";
+			};
+			name = Debug;
+		};
+		CDC44A031AA5B15400F2AE40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = imageRetouchLibTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/imageRetouchLib.app/imageRetouchLib";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CDC449D31AA5B15400F2AE40 /* Build configuration list for PBXProject "imageRetouchLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDC449FC1AA5B15400F2AE40 /* Debug */,
+				CDC449FD1AA5B15400F2AE40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDC449FE1AA5B15400F2AE40 /* Build configuration list for PBXNativeTarget "imageRetouchLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDC449FF1AA5B15400F2AE40 /* Debug */,
+				CDC44A001AA5B15400F2AE40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CDC44A011AA5B15400F2AE40 /* Build configuration list for PBXNativeTarget "imageRetouchLibTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDC44A021AA5B15400F2AE40 /* Debug */,
+				CDC44A031AA5B15400F2AE40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CDC449E21AA5B15400F2AE40 /* imageRetouchLib.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CDC449E31AA5B15400F2AE40 /* imageRetouchLib.xcdatamodel */,
+			);
+			currentVersion = CDC449E31AA5B15400F2AE40 /* imageRetouchLib.xcdatamodel */;
+			path = imageRetouchLib.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CDC449D01AA5B15400F2AE40 /* Project object */;
+}

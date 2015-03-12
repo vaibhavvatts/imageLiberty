@@ -27,16 +27,19 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 
-
+    [self appearences];
+    // get initial position
+    filterRect = self.viewFilterPanel.frame;
+    [self hideFilter];
 
 }
 
 -(void)viewWillAppear:(BOOL)animated
 {
-    // - http://stackoverflow.com/questions/13446920/how-can-i-get-a-views-current-width-and-height-when-using-autolayout-constraint
-    [self.view layoutIfNeeded];
-    //[self.view setNeedsLayout];
-    [self FilterViewAppearence];
+//    // - http://stackoverflow.com/questions/13446920/how-can-i-get-a-views-current-width-and-height-when-using-autolayout-constraint
+//    [self.view layoutIfNeeded];
+//    //[self.view setNeedsLayout];
+//    [self FilterViewAppearence];
 
 }
 
@@ -48,18 +51,29 @@
 
 #pragma mark - appearence
 
--(void)FilterViewAppearence
+-(void)appearences
 {
-    // get initial position
-    filterRect = self.viewFilterPanel.frame;
+    // filterView
 
-    // - http://stackoverflow.com/questions/14204082/where-to-set-translatesautoresizingmaskintoconstraints-in-xcode-4-5
-    [self.viewFilterPanel setTranslatesAutoresizingMaskIntoConstraints:YES];
+    self.viewFilterPanel.layer.shadowColor = [UIColor blackColor].CGColor;
+    self.viewFilterPanel.layer.shadowOpacity  = 0.7;
+    self.viewFilterPanel.layer.shadowOffset = CGSizeMake(0, 5);
+    self.viewFilterPanel.layer.shadowRadius = 5;
+    self.viewFilterPanel.layer.borderWidth = .2;
+    self.viewFilterPanel.layer.borderColor = [UIColor grayColor].CGColor;
+    self.viewFilterPanel.layer.cornerRadius = 4;
+}
+
+-(void)hideFilter
+{
+    //    // - http://stackoverflow.com/questions/14204082/where-to-set-translatesautoresizingmaskintoconstraints-in-xcode-4-5
+    //    [self.viewFilterPanel setTranslatesAutoresizingMaskIntoConstraints:YES];
 
     CGRect startUpFrame = filterRect;
     startUpFrame.origin.y = screenSize.size.height;
     self.viewFilterPanel.frame = startUpFrame;
 }
+
 
 /*
 #pragma mark - Navigation
@@ -73,11 +87,26 @@
 
 
 #pragma mark - Actions
-- (IBAction)btnSelectImage:(UIBarButtonItem *)sender {
+
+- (IBAction)btnSelectImage:(UIButton *)sender {
+    //[self performSegueWithIdentifier:@"selectImageID" sender:sender];
 }
 
 - (IBAction)btnFilters:(id)sender {
-    self.viewFilterPanel.frame = filterRect;
+    static BOOL isFilterViewVisible = NO;
+
+    [UIView animateWithDuration:.2 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+
+        if (isFilterViewVisible) {
+            [self hideFilter];
+        }
+        else
+        {
+            self.viewFilterPanel.frame = filterRect;
+        }
+    } completion:^(BOOL finished) {
+        isFilterViewVisible = !isFilterViewVisible;
+    }];
 }
 
 @end

@@ -1,28 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="R0I-T1-ork">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="R0I-T1-ork">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Main View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="MainViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QYx-aI-BKW">
-                                <rect key="frame" x="16" y="64" width="568" height="516"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="QYx-aI-BKW">
+                                <rect key="frame" x="16" y="43" width="343" height="513"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="51z-9i-VDL">
-                                <rect key="frame" x="500" y="64" width="100" height="536"/>
+                            <view contentMode="scaleToFill" id="51z-9i-VDL">
+                                <rect key="frame" x="275" y="43" width="100" height="624"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
                                 <color key="backgroundColor" red="1" green="0.73333333329999995" blue="0.015686274510000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="translatesAutoresizingMaskIntoConstraints" value="NO"/>
@@ -30,15 +27,6 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="51z-9i-VDL" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="3pM-6U-tzV"/>
-                            <constraint firstItem="QYx-aI-BKW" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="9D2-M6-G47"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="51z-9i-VDL" secondAttribute="trailing" constant="-16" id="AKq-LB-EEY"/>
-                            <constraint firstItem="QYx-aI-BKW" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="JLf-qw-MDk"/>
-                            <constraint firstItem="QYx-aI-BKW" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="V5A-yf-F0x"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="51z-9i-VDL" secondAttribute="bottom" id="fbr-Dg-WwO"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="QYx-aI-BKW" secondAttribute="bottom" constant="20" id="tah-eP-6QR"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ndM-UB-ndc">
                         <barButtonItem key="leftBarButtonItem" style="plain" id="q2G-1X-5hq">
@@ -48,13 +36,14 @@
                                 <state key="normal" title="Select Image">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnSelectImage:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="zB3-4M-ouz"/>
+                                    <segue destination="c5N-25-k8m" kind="push" id="ebI-i4-y4D"/>
+                                </connections>
                             </button>
-                            <connections>
-                                <action selector="btnSelectImage:" destination="vXZ-lx-hvc" id="wRk-7p-vcD"/>
-                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="1Mg-G7-AVH">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fJP-ho-4gl">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fJP-ho-4gl">
                                 <rect key="frame" x="-23" y="-15" width="133" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Filters">
@@ -66,6 +55,8 @@
                             </button>
                         </barButtonItem>
                     </navigationItem>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="filters" destination="1Mg-G7-AVH" id="9OC-uc-hso"/>
                         <outlet property="imgTouchable" destination="QYx-aI-BKW" id="VfE-TZ-Qze"/>
@@ -75,13 +66,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="972" y="-270"/>
+            <point key="canvasLocation" x="553.5" y="-256.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ade-Z9-3tK">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="R0I-T1-ork" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <nil key="simulatedStatusBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="E6e-vu-0ch">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -93,7 +85,88 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kpg-zi-o2j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="260" y="-270"/>
+            <point key="canvasLocation" x="121" y="-256"/>
+        </scene>
+        <!--Select Image View Controller-->
+        <scene sceneID="Sw5-ae-oh9">
+            <objects>
+                <viewController id="c5N-25-k8m" userLabel="Select Image View Controller" customClass="SelectImage" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KaB-9j-87T">
+                        <rect key="frame" x="0.0" y="64" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UrO-Te-T7J">
+                                <rect key="frame" x="16" y="549" width="343" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Facebook Pics">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnFacebookPics:" destination="c5N-25-k8m" eventType="touchUpInside" id="9H4-PY-T3H"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mKJ-PH-qrt">
+                                <rect key="frame" x="16" y="602" width="343" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Picasa Pics">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnFacebookPics:" destination="c5N-25-k8m" eventType="touchUpInside" id="jYS-zI-n7H"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="03Z-2M-X8f">
+                                <rect key="frame" x="16" y="496" width="343" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Library Pics">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnLibraryPics:" destination="c5N-25-k8m" eventType="touchUpInside" id="YDY-2M-tUP"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" id="5Fm-yl-g9G">
+                                <rect key="frame" x="38" y="71" width="299" height="344"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="EUQ-vk-FeV">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="7Bd-kX-8aP">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wDt-mJ-Aq6">
+                                <rect key="frame" x="-23" y="-15" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnDone:" destination="c5N-25-k8m" eventType="touchUpInside" id="e4P-46-qgF"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="btnFacebok" destination="UrO-Te-T7J" id="8ae-Kb-WkW"/>
+                        <outlet property="btnLibrary" destination="03Z-2M-X8f" id="1gh-TQ-9gi"/>
+                        <outlet property="btnPicasa" destination="mKJ-PH-qrt" id="2cJ-Aq-xkc"/>
+                        <outlet property="viewImg" destination="5Fm-yl-g9G" id="lCT-Wq-DHT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Pf-QQ-BF9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1021.5" y="-256.5"/>
         </scene>
     </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>

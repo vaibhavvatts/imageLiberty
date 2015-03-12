@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		800E939C1AAB1AD400CB27C0 /* SelectImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 800E939B1AAB1AD400CB27C0 /* SelectImage.m */; };
+		800E93A41AAB2C1500CB27C0 /* UIButton+buttonCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 800E93A31AAB2C1500CB27C0 /* UIButton+buttonCategory.m */; };
 		801641591AA6135200FF7060 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 801641581AA6135200FF7060 /* MainViewController.m */; };
 		CDC449DE1AA5B15400F2AE40 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC449DD1AA5B15400F2AE40 /* main.m */; };
 		CDC449E11AA5B15400F2AE40 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC449E01AA5B15400F2AE40 /* AppDelegate.m */; };
@@ -28,6 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		800E939A1AAB1AD400CB27C0 /* SelectImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectImage.h; sourceTree = "<group>"; };
+		800E939B1AAB1AD400CB27C0 /* SelectImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectImage.m; sourceTree = "<group>"; };
+		800E93A21AAB2C1500CB27C0 /* UIButton+buttonCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+buttonCategory.h"; sourceTree = "<group>"; };
+		800E93A31AAB2C1500CB27C0 /* UIButton+buttonCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+buttonCategory.m"; sourceTree = "<group>"; };
 		801641571AA6135200FF7060 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = imageRetouchLib/MainViewController.h; sourceTree = "<group>"; };
 		801641581AA6135200FF7060 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = imageRetouchLib/MainViewController.m; sourceTree = "<group>"; };
 		CDC449D81AA5B15400F2AE40 /* imageRetouchLib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = imageRetouchLib.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,11 +68,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		800E939D1AAB1D9100CB27C0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		800E939E1AAB25CE00CB27C0 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				800E93A21AAB2C1500CB27C0 /* UIButton+buttonCategory.h */,
+				800E93A31AAB2C1500CB27C0 /* UIButton+buttonCategory.m */,
+			);
+			name = Buttons;
+			sourceTree = "<group>";
+		};
 		801641561AA6133100FF7060 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				801641571AA6135200FF7060 /* MainViewController.h */,
 				801641581AA6135200FF7060 /* MainViewController.m */,
+				800E939A1AAB1AD400CB27C0 /* SelectImage.h */,
+				800E939B1AAB1AD400CB27C0 /* SelectImage.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -74,6 +98,8 @@
 		CDC449CF1AA5B15400F2AE40 = {
 			isa = PBXGroup;
 			children = (
+				800E939E1AAB25CE00CB27C0 /* Buttons */,
+				800E939D1AAB1D9100CB27C0 /* Views */,
 				801641561AA6133100FF7060 /* ViewControllers */,
 				CDC449DA1AA5B15400F2AE40 /* imageRetouchLib */,
 				CDC449F71AA5B15400F2AE40 /* imageRetouchLibTests */,
@@ -233,7 +259,9 @@
 				CDC449E11AA5B15400F2AE40 /* AppDelegate.m in Sources */,
 				CDC449DE1AA5B15400F2AE40 /* main.m in Sources */,
 				CDC449E41AA5B15400F2AE40 /* imageRetouchLib.xcdatamodeld in Sources */,
+				800E939C1AAB1AD400CB27C0 /* SelectImage.m in Sources */,
 				801641591AA6135200FF7060 /* MainViewController.m in Sources */,
+				800E93A41AAB2C1500CB27C0 /* UIButton+buttonCategory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,7 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface MainViewController : UIViewController
+{
 
+}
 
+@property (nonatomic, copy) UIImage* (^blockGetImage)();
 
 @end

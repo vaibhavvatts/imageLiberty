@@ -8,17 +8,29 @@
 
 #import "SelectImage.h"
 #import "UIButton+buttonCategory.h"
+#import "MainViewController.h"
+
 @interface SelectImage ()<UIImagePickerControllerDelegate>
 {
     __weak IBOutlet UIButton *btnLibrary;
     __weak IBOutlet UIButton *btnPicasa;
     __weak IBOutlet UIView *viewImg;
     __weak IBOutlet UIButton *btnFacebok;
+
+    __weak UIImage *imgFromSource;
+    __weak MainViewController * refMain;
 }
 
 @end
 
 @implementation SelectImage
+
+
+-(void)receiveRef:(id)ref
+{
+    refMain = ref;
+
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -63,7 +75,7 @@
 
 
 - (IBAction)btnDone:(UIButton *)sender {
-
+    refMain.blockGetImage = (id)imgFromSource;
 }
 
 

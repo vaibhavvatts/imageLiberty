@@ -9,6 +9,7 @@
 #define screenSize [UIScreen mainScreen].bounds
 
 #import "MainViewController.h"
+#import "SelectImage.h"
 
 @interface MainViewController ()
 {
@@ -40,6 +41,12 @@
 //    [self.view layoutIfNeeded];
 //    //[self.view setNeedsLayout];
 //    [self FilterViewAppearence];
+
+
+    if(self.blockGetImage != nil)
+    {
+        self.imgTouchable = self.blockGetImage;
+    }
 
 }
 
@@ -88,9 +95,22 @@
 
 #pragma mark - Actions
 
-- (IBAction)btnSelectImage:(UIButton *)sender {
-    //[self performSegueWithIdentifier:@"selectImageID" sender:sender];
+
+- (IBAction)btnSelectImage:(id)sender {
+    [self performSegueWithIdentifier:@"selectImage" sender:sender];
 }
+
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"selectImage"])
+    {
+         SelectImage *selectImage = [segue destinationViewController];
+        [selectImage receiveRef:self];
+        
+    }
+}
+
 
 - (IBAction)btnFilters:(id)sender {
     static BOOL isFilterViewVisible = NO;

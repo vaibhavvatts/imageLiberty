@@ -10,4 +10,5 @@
 
 @interface SelectImage : UIViewController
 
+-(void)receiveRef:(id)ref;
 @end

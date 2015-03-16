@@ -19,5 +19,11 @@
     btn.layer.borderWidth = .4;
     btn.layer.borderColor = [UIColor grayColor].CGColor;
     btn.layer.cornerRadius = 3;
+
+
+    CAGradientLayer *gradientLayer = [[CAGradientLayer alloc]init];
+    gradientLayer.frame = btn.bounds;
+    gradientLayer.colors = [[NSArray alloc]initWithObjects:(id)[UIColor colorWithWhite:.5 alpha:.1].CGColor,(id)[UIColor colorWithWhite:.5 alpha:.3].CGColor, nil];
+    [btn.layer insertSublayer:gradientLayer atIndex:0];
 }
 @end

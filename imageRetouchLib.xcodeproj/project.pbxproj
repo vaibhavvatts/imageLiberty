@@ -10,6 +10,7 @@
 		800E939C1AAB1AD400CB27C0 /* SelectImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 800E939B1AAB1AD400CB27C0 /* SelectImage.m */; };
 		800E93A41AAB2C1500CB27C0 /* UIButton+buttonCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 800E93A31AAB2C1500CB27C0 /* UIButton+buttonCategory.m */; };
 		801641591AA6135200FF7060 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 801641581AA6135200FF7060 /* MainViewController.m */; };
+		802C9CA31AB8A9F700FE1752 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 802C9CA21AB8A9F700FE1752 /* FacebookSDK.framework */; };
 		CDC449DE1AA5B15400F2AE40 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC449DD1AA5B15400F2AE40 /* main.m */; };
 		CDC449E11AA5B15400F2AE40 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC449E01AA5B15400F2AE40 /* AppDelegate.m */; };
 		CDC449E41AA5B15400F2AE40 /* imageRetouchLib.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CDC449E21AA5B15400F2AE40 /* imageRetouchLib.xcdatamodeld */; };
@@ -36,6 +37,7 @@
 		800E93A31AAB2C1500CB27C0 /* UIButton+buttonCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+buttonCategory.m"; sourceTree = "<group>"; };
 		801641571AA6135200FF7060 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = imageRetouchLib/MainViewController.h; sourceTree = "<group>"; };
 		801641581AA6135200FF7060 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = imageRetouchLib/MainViewController.m; sourceTree = "<group>"; };
+		802C9CA21AB8A9F700FE1752 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		CDC449D81AA5B15400F2AE40 /* imageRetouchLib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = imageRetouchLib.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC449DC1AA5B15400F2AE40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDC449DD1AA5B15400F2AE40 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				802C9CA31AB8A9F700FE1752 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,9 +98,18 @@
 			name = ViewControllers;
 			sourceTree = "<group>";
 		};
+		802C9CA11AB8A9E300FE1752 /* frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				802C9CA21AB8A9F700FE1752 /* FacebookSDK.framework */,
+			);
+			name = frameworks;
+			sourceTree = "<group>";
+		};
 		CDC449CF1AA5B15400F2AE40 = {
 			isa = PBXGroup;
 			children = (
+				802C9CA11AB8A9E300FE1752 /* frameworks */,
 				800E939E1AAB25CE00CB27C0 /* Buttons */,
 				800E939D1AAB1D9100CB27C0 /* Views */,
 				801641561AA6133100FF7060 /* ViewControllers */,
@@ -383,6 +395,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/vaibhav/Documents/FacebookSDK,
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = imageRetouchLib/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -393,6 +410,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/vaibhav/Documents/FacebookSDK,
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = imageRetouchLib/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

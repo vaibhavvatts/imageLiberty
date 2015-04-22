@@ -51,6 +51,9 @@
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)image editingInfo:(NSDictionary *)editingInfo
 {
     [viewImg setBackgroundColor:[UIColor colorWithPatternImage:image]];
+    _blockGetImage = ^(){
+        return (UIImage *)image;
+    };
     [picker dismissViewControllerAnimated:YES completion:nil];
 }
 
@@ -75,7 +78,7 @@
 
 
 - (IBAction)btnDone:(UIButton *)sender {
-    refMain.blockGetImage = (id)imgFromSource;
+    
 }
 
 

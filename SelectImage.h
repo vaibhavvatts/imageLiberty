@@ -11,4 +11,6 @@
 @interface SelectImage : UIViewController
 
 -(void)receiveRef:(id)ref;
+
+@property (nonatomic, copy) UIImage* (^blockGetImage)();
 @end

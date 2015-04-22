@@ -45,9 +45,8 @@
 
     if(self.blockGetImage != nil)
     {
-        self.imgTouchable = self.blockGetImage;
+        self.imgTouchable.image = self.blockGetImage;
     }
-
 }
 
 
@@ -100,17 +99,19 @@
     [self performSegueWithIdentifier:@"selectImage" sender:sender];
 }
 
-
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([[segue identifier] isEqualToString:@"selectImage"])
     {
          SelectImage *selectImage = [segue destinationViewController];
         [selectImage receiveRef:self];
-        
+     //   selectImage.blockGetImage = _blockGetImage;
+        selectImage.blockGetImage = ^UIImage *(){
+            NSLog(@"call");
+            return _blockGetImage;
+        };
     }
 }
-
 
 - (IBAction)btnFilters:(id)sender {
     static BOOL isFilterViewVisible = NO;

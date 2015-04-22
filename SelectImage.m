@@ -26,11 +26,6 @@
 @implementation SelectImage
 
 
--(void)receiveRef:(id)ref
-{
-    refMain = ref;
-
-}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -51,9 +46,7 @@
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)image editingInfo:(NSDictionary *)editingInfo
 {
     [viewImg setBackgroundColor:[UIColor colorWithPatternImage:image]];
-    _blockGetImage = ^(){
-        return (UIImage *)image;
-    };
+    self.blockGetImage(image);
     [picker dismissViewControllerAnimated:YES completion:nil];
 }
 

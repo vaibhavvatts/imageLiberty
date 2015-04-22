@@ -13,6 +13,6 @@
 
 }
 
-@property (nonatomic, copy) UIImage* (^blockGetImage)();
+
 
 @end

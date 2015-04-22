@@ -43,10 +43,6 @@
 //    [self FilterViewAppearence];
 
 
-    if(self.blockGetImage != nil)
-    {
-        self.imgTouchable.image = self.blockGetImage;
-    }
 }
 
 
@@ -104,12 +100,11 @@
     if ([[segue identifier] isEqualToString:@"selectImage"])
     {
          SelectImage *selectImage = [segue destinationViewController];
-        [selectImage receiveRef:self];
-     //   selectImage.blockGetImage = _blockGetImage;
-        selectImage.blockGetImage = ^UIImage *(){
-            NSLog(@"call");
-            return _blockGetImage;
+
+        selectImage.blockGetImage = ^void(UIImage *img){
+            self.imgTouchable.image = img;
         };
+        
     }
 }
 

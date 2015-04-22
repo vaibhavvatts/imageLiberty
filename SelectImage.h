@@ -12,5 +12,5 @@
 
 -(void)receiveRef:(id)ref;
 
-@property (nonatomic, copy) UIImage* (^blockGetImage)();
+@property (nonatomic, copy) void (^blockGetImage)(UIImage *);
 @end
